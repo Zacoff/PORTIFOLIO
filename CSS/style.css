@@ -9,7 +9,7 @@
 }
 .bg-space-1{
     background-image: url(../IMAGE/space.jpg);
-    background-size:cover;
+    background-size:100%;
     background-position: center;
     background-repeat: repeat-y;
 }
@@ -94,17 +94,26 @@
 }
 /* EXPERIENCE */
 .l-experience{
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
 }
-.c-experience{
+.l-experience h1 {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 20px 15px;
+}
+.c-experience-1 , .c-experience-2{
     width: 29%;
     height: 20%;
     margin: 2%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     background-color: var(--bg-1);
     box-shadow: 0 0 20px black;
+    text-align: center;
 }
 .nivel h2{
     position: absolute;
@@ -116,31 +125,43 @@
     width: 0; 
     height: 50px;
     border-radius: 5px;
-    margin: 25px 0;
+    margin: 15px 0;
     transition: 1s;
     background-color: var(--violet);
     overflow: hidden;
 }
-.c-experience:hover .html{
+.c-experience-1:hover .html{
     width: 100%;
 }
-.c-experience:hover .css{
+.c-experience-1:hover .css{
     width: 100%;
 }
-.c-experience:hover .js{
+.c-experience-1:hover .js{
     width: 60%;
 }
-
+.c-experience-2{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width:250px;
+    height: 250px;
+}
+.c-experience-2 h2{
+    width: 100%;
+}
+.c-experience-2 img{
+    width: 150px;
+    height: 150px;
+}
 /* MEDIA QUERIE */
 @media screen and (max-width:970px) {
     .aspas-1,.aspas-2{
         width:100%
     }
-    .c-experience{
+    .c-experience-1 , .c-experience-2{
         width: 100%;
     }
 }
-
 /* ANIMATIONS */
 @keyframes load {
     0%,100%{
@@ -172,8 +193,7 @@
 ::-webkit-scrollbar{
     background: black;
 }
-::-webkit-scrollbar-thumb{
-    
+::-webkit-scrollbar-thumb{ 
     background-color: var(--violet);
-    border-radius: 50px;
+    border-radius: 10px;
 }
